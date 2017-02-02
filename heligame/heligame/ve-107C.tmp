@@ -1,0 +1,143 @@
+﻿namespace heligame
+{
+    partial class heligame
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(heligame));
+            this.bgTop = new System.Windows.Forms.PictureBox();
+            this.bgBottom = new System.Windows.Forms.PictureBox();
+            this.block1 = new System.Windows.Forms.PictureBox();
+            this.blockTimer = new System.Windows.Forms.Timer(this.components);
+            this.block2 = new System.Windows.Forms.PictureBox();
+            this.block3 = new System.Windows.Forms.PictureBox();
+            this.heli = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.bgTop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bgBottom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.block1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.block2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.block3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heli)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // bgTop
+            // 
+            this.bgTop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bgTop.BackgroundImage")));
+            this.bgTop.Location = new System.Drawing.Point(0, 0);
+            this.bgTop.Name = "bgTop";
+            this.bgTop.Size = new System.Drawing.Size(788, 59);
+            this.bgTop.TabIndex = 0;
+            this.bgTop.TabStop = false;
+            // 
+            // bgBottom
+            // 
+            this.bgBottom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bgBottom.BackgroundImage")));
+            this.bgBottom.Location = new System.Drawing.Point(0, 375);
+            this.bgBottom.Name = "bgBottom";
+            this.bgBottom.Size = new System.Drawing.Size(788, 59);
+            this.bgBottom.TabIndex = 2;
+            this.bgBottom.TabStop = false;
+            // 
+            // block1
+            // 
+            this.block1.Image = ((System.Drawing.Image)(resources.GetObject("block1.Image")));
+            this.block1.Location = new System.Drawing.Point(592, 77);
+            this.block1.Name = "block1";
+            this.block1.Size = new System.Drawing.Size(37, 111);
+            this.block1.TabIndex = 3;
+            this.block1.TabStop = false;
+            // 
+            // blockTimer
+            // 
+            this.blockTimer.Enabled = true;
+            this.blockTimer.Interval = 10;
+            this.blockTimer.Tick += new System.EventHandler(this.blockTimer_Tick);
+            // 
+            // block2
+            // 
+            this.block2.Image = ((System.Drawing.Image)(resources.GetObject("block2.Image")));
+            this.block2.Location = new System.Drawing.Point(719, 285);
+            this.block2.Name = "block2";
+            this.block2.Size = new System.Drawing.Size(37, 111);
+            this.block2.TabIndex = 4;
+            this.block2.TabStop = false;
+            // 
+            // block3
+            // 
+            this.block3.Image = ((System.Drawing.Image)(resources.GetObject("block3.Image")));
+            this.block3.Location = new System.Drawing.Point(324, 240);
+            this.block3.Name = "block3";
+            this.block3.Size = new System.Drawing.Size(37, 111);
+            this.block3.TabIndex = 5;
+            this.block3.TabStop = false;
+            // 
+            // heli
+            // 
+            this.heli.Image = ((System.Drawing.Image)(resources.GetObject("heli.Image")));
+            this.heli.Location = new System.Drawing.Point(93, 199);
+            this.heli.Name = "heli";
+            this.heli.Size = new System.Drawing.Size(77, 40);
+            this.heli.TabIndex = 6;
+            this.heli.TabStop = false;
+            // 
+            // heligame
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(786, 433);
+            this.Controls.Add(this.heli);
+            this.Controls.Add(this.block3);
+            this.Controls.Add(this.block2);
+            this.Controls.Add(this.block1);
+            this.Controls.Add(this.bgBottom);
+            this.Controls.Add(this.bgTop);
+            this.Name = "heligame";
+            this.Text = "heligame";
+            this.Load += new System.EventHandler(this.heligame_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bgTop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bgBottom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.block1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.block2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.block3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heli)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.PictureBox bgTop;
+        private System.Windows.Forms.PictureBox bgBottom;
+        private System.Windows.Forms.PictureBox block1;
+        private System.Windows.Forms.Timer blockTimer;
+        private System.Windows.Forms.PictureBox block2;
+        private System.Windows.Forms.PictureBox block3;
+        private System.Windows.Forms.PictureBox heli;
+    }
+}
+

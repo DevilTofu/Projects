@@ -1,0 +1,95 @@
+﻿/* Programmers: Daniel Kim and Kevin Choi
+ * Date: December 21, 2011
+ * Purpose: Helicopter Game
+*/
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace heligame
+{
+    public partial class heligame : Form
+    {
+        public heligame()
+        {
+            InitializeComponent();
+        }
+
+        private void blockTimer_Tick(object sender, EventArgs e)
+        {
+            block1.Left += -1;
+            block2.Left += -1;
+            block3.Left += -1;      
+            if (block1.Left + block1.Width <= this.Left)
+            {
+                //changing position of block1
+                Random img = new Random();
+                int randomLocation = (img.Next() % this.Height) - block1.Height;
+                block1.Left = this.Left + this.Width;
+                block1.Top = randomLocation;
+            }
+
+            if (block2.Left + block2.Width <= this.Left)
+            {
+                //changing position of block2
+                Random img = new Random();
+                int randomLocation = (img.Next() % this.Height) - block1.Height;
+                block2.Left = this.Left + this.Width;
+                block2.Top = randomLocation;
+            }
+
+            if (block3.Left + block3.Width <= this.Left)
+            {
+                //changing position of block3
+                Random img = new Random();
+                int randomLocation = (img.Next() % this.Height) - block1.Height;
+                block3.Left = this.Left + this.Width;
+                block3.Top = randomLocation;
+            }
+            if (heli.Left + heli.Width == block1.Left || heli.Left + heli.Top == block1.Top || heli.Top == block1.Top+block1.Left)
+            {
+                block1.Left += +1;
+                block2.Left += +1;
+                block3.Left += +1;
+            }
+            if (heli.Left + heli.Width == block2.Left || heli.Left + heli.Top == block2.Top || heli.Top == block2.Top + block2.Left)
+            {
+                block1.Left += +1;
+                block2.Left += +1;
+                block3.Left += +1;
+            }
+            if (heli.Left + heli.Width == block3.Left || heli.Left + heli.Top == block3.Top || heli.Top == block3.Top + block3.Left)
+            {
+                block1.Left += +1;
+                block2.Left += +1;
+                block3.Left += +1;
+            }
+
+            if(button1.Enabled)
+            {
+                heli.Top += -1;
+            }
+            if (heli.Top==bgTop)
+            {
+                heli.Top += +1;
+            }
+            
+            
+        }
+
+        private void heligame_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
